@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>QR 코드 생성기</title>
+</head>
+<body>
+  <h1>QR 코드 생성기</h1>
+  <form method="POST" action="/generate">
+    <label>텍스트 또는 URL: <input type="text" name="data" required></label><br>
+    <label>중앙 문장 (선택): <input type="text" name="centerText"></label><br>
+    <button type="submit">생성</button>
+  </form>
+
+  <!-- <% if (qrImage) { %>
+    <h2>결과:</h2>
+    <img src="<%= qrImage %>" alt="QR 코드">
+  <% } %> -->
+</body>
+</html>
